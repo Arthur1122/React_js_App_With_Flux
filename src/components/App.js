@@ -9,7 +9,7 @@ function App() {
     if (route === "/about")
       return (
         <>
-          <AboutPage /> <h1>aaa</h1>
+          <AboutPage />
         </>
       );
     return <HomePage />;
