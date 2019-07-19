@@ -14,6 +14,7 @@ function App() {
       );
     return <HomePage />;
   }
+
   return (
     <div className="container-fluid">
       <Header />
