@@ -6,7 +6,12 @@ import Header from "./common/Header";
 function App() {
   function getPage() {
     const route = window.location.pathname;
-    if (route === "/about") return <AboutPage />;
+    if (route === "/about")
+      return (
+        <>
+          <AboutPage /> <h1>aaa</h1>
+        </>
+      );
     return <HomePage />;
   }
   return (
