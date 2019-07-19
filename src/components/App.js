@@ -9,6 +9,7 @@ function App() {
     if (route === "/about") return <AboutPage />;
     return <HomePage />;
   }
+
   return (
     <div className="container-fluid">
       <Header />
