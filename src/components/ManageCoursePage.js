@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CourseForm from "./CourseForm";
 import * as courseAPI from "../api/courseApi";
 import { toast } from "react-toastify";
@@ -12,6 +12,13 @@ const ManageCoursePage = props => {
     authorId: null,
     category: ""
   });
+
+  useEffect(() => {
+    const slug = props.match.params.slug; // from the path `/courses/:lug`
+    if (slug) {
+      courseAPI.getCourseBySlug(slug).then(_course => setCourse(_course));
+    }
+  }, [props.match.params.slug]);
 
   function handleChange({ target }) {
     //const target = event.target verevi grace senca haskanum jsx
