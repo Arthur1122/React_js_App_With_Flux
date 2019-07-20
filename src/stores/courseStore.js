@@ -13,7 +13,7 @@ class CourseStore extends EventEmitter {
     this.removeChangeListener(CHANGE_EVENT, callback);
   }
 
-  emit() {
+  emitChange() {
     this.emit(CHANGE_EVENT);
   }
 
