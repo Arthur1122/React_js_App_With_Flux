@@ -36,8 +36,8 @@ function CourseForm(props) {
 
       <TextInput
         id="category"
+        label="Category"
         name="category"
-        label="Categoru"
         onChange={props.onChange}
         value={props.course.category}
         error={props.errors.category}
@@ -50,8 +50,8 @@ function CourseForm(props) {
 
 CourseForm.propTypes = {
   course: PropTypes.object.isRequired,
-  onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   errors: PropTypes.object.isRequired
 };
 

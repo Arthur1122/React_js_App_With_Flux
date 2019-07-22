@@ -6,9 +6,10 @@ function NotFoundPage() {
     <div>
       <h2>Page Not Found</h2>
       <p>
-        <Link to="/">Bact to Home</Link>
+        <Link to="/">Back to Home</Link>
       </p>
     </div>
   );
 }
+
 export default NotFoundPage;
